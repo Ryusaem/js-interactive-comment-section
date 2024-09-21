@@ -1,6 +1,7 @@
 # Interactive comments section
 
 ![Design preview for the Interactive comments section coding challenge](./design/desktop-preview.jpg)
+[Project Link](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9)
 
 ## Table of contents
 
@@ -47,13 +48,15 @@ template
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Ryusaem/js-interactive-rating-component)
-- Live Site URL: [Github Live Demo](https://ryusaem.github.io/js-interactive-rating-component/)
+- Solution URL: [GitHub](https://github.com/Ryusaem/js-interactive-comment-section)
+- Live Site URL: [Github Live Demo](https://ryusaem.github.io/js-interactive-comment-section/)
+- [Wireframe](https://wireframe.cc/4CfeuN)
 
 ## My process
 
 Total:
 
+    - start: 21/09/2024; end: ../../2024;
     - design/wireframe: xx min
     - coding/implementation: xx min
     - documentation/README.md: xx min
@@ -82,12 +85,13 @@ Total:
 
 ### Useful resources -
 
-[Frontend Mentor](https://www.frontendmentor.io/challenges/) - Formidable resources to make you learn by "doing" awesome project. Highly recommend it.
+- [Frontend Mentor](https://www.frontendmentor.io/challenges/) - Formidable resources to make you learn by "doing" awesome project. Highly recommend it.
 
 ## Author -
 
-- Github - [@Ryusaem](https://github.com/Ryusaem) -
+- Github - [@Ryusaem](https://github.com/Ryusaem)
 - Linkedin - [@sambath-meas](https://www.linkedin.com/in/sambath-meas)
 - Coursera - [@sambath-meas](https://www.coursera.org/learner/sambath-meas)
-- Twitter - [@RyuBraveheart](https://twitter.com/RyuBraveheart) - - - Frontend Mentor - [@Ryusaem](https://www.frontendmentor.io/profile/Ryusaem)
+- Twitter - [@RyuBraveheart](https://twitter.com/RyuBraveheart)
+- Frontend Mentor - [@Ryusaem](https://www.frontendmentor.io/profile/Ryusaem)
 - CodeWars - [@Ryusaem](https://www.codewars.com/users/Ryusaem)
