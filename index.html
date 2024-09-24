@@ -26,110 +26,67 @@
 
     <title>Interactive comments section | Frontend Mentor</title>
 
+
+    </style>
+
 </head>
 
 <body>
 
-    <div class="comment-section">
+    <div class="comment-container">
 
-        <header class="comment-section__header">
-            <div class="comment-section__user">
-                <img class="comment-section__avatar" src="./images/avatars/image-amyrobson.png" alt="User Avatar">
-                <div class="comment-section__user-info">
-                    <h3 class="comment-section__user-name">Username</h3>
-                    <span class="comment-section__time">Time</span>
-                </div>
-            </div>
-        </header>
+        <img src="./images/avatars/image-amyrobson.png" class="comment__avatar item" alt="avatar"></img>
 
-
-        <div class="comment-section__body">
-            <div class="comment-section__comments">
-                <article class="comment">
-
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus
-                        ultricies, ultricies
-                        nunc eu, vehicula nunc. Nullam nec purus ultricies, ultricies nunc eu, vehicula nunc.
-                    </p>
-
-                </article>
-            </div>
-
-            <div class="comment-section-footer">
-                <div class="comment__ratings">
-                    <button class="comment__like-btn">+</button>
-                    <span class="comment__like-score">12</span>
-                    <button class="comment__dislike-btn">-</button>
-                </div>
-
-                <div class="comment__actions">
-                    <button class="comment__reply-btn">Reply</button>
-                </div>
-            </div>
+        <div class="comment__user-info item">
+            <span class="comment__user-name">Name Surname</span>
+            <time class="comment__time">Time Ago</time>
         </div>
 
-    </div>
-
-
-    <div class="container">
-        <div class="item1">
-            <div class="nested-container">
-                <div class="nested1">1</div>
-                <div class="nested2">2</div>
-                <div class="nested3">3</div>
-            </div>
-        </div>
-        <div class="item2">
-            <div class="nested-container">
-                <div class="nested4">4</div>
-                <div class="nested-nested-container">
-                    <div class="nested5">5</div>
-                    <div class="nested6">6</div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <!-- Reply form or textarea for new comment -->
-    <!-- <form class="comment-form">
-        <textarea class="comment-form__textarea" placeholder="Add a comment..."></textarea>
-        <button type="submit" class="comment-form__submit-btn">Send</button>
-    </form>
-    </div> -->
-
-    <!-- Modal for delete confirmation -->
-    <!-- <div class="modal modal--hidden" id="deleteModal">
-        <div class="modal__content">
-            <h3 class="modal__title">Delete comment</h3>
-            <p class="modal__description">Are you sure you want to delete this comment? This action cannot be
-                undone.</p>
-            <div class="modal__actions">
-                <button class="modal__cancel-btn">No, Cancel</button>
-                <button class="modal__delete-btn">Yes, Delete</button>
-            </div>
-        </div>
-    </div>
-    </div> -->
-
-    <footer class="footer">
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="https://github.com/Ryusaem">Ryusaem</a>.
-        </div>
-        <p>
-            Copyright ©
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-            <a href="https://github.com/Ryusaem" target="_blank">
-                Ryusaem
-                <i class="fa-brands fa-github fa-beat-fade"></i>
-            </a>
+        <p class="comment__text item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque alias
+            amet
+            deserunt minus quos magni dignissimos, voluptas voluptatibus aspernatur, obcaecati sit asperiores. Commodi
+            nemo itaque tempore ex, blanditiis?
         </p>
-    </footer>
+
+        <div class="comment__rating item">
+            <i class="fa-solid fa-plus"></i>
+            <span class="comment__number">0</span>
+            <i class="fa-solid fa-minus"></i>
+        </div>
+
+        <div class="comment__reply item">
+            <i class="fas fa-reply"></i>
+            Reply
+        </div>
+
+        <!-- <div class="comment__replies"></div> -->
+    </div>
+
+    <div class="comment-container">
+        <img src="./images/avatars/image-amyrobson.png" class="comment__avatar item"></img>
+        <div class="comment__user-info item">
+            <span class="comment__user-name">Name Surname</span>
+            <time class="comment__time">Time Ago</time>
+        </div>
+        <p class="comment__text item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque alias
+            amet
+            deserunt minus quos magni dignissimos, voluptas voluptatibus aspernatur, obcaecati sit asperiores. Commodi
+            nemo itaque tempore ex, blanditiis?
+        </p>
+
+        <div class="comment__rating item">
+            <i class="fa-solid fa-plus"></i>
+            <span class="comment__number">0</span>
+            <i class="fa-solid fa-minus"></i>
+        </div>
+
+        <div class="comment__reply item">
+            <i class="fas fa-reply"></i>
+            Reply
+        </div>
+
+        <div class="comment__replies"></div>
+    </div>
 
 </body>
 

@@ -8,26 +8,56 @@ function clickReply() {
   console.log("clicked");
 }
 
-function createForm(parents) {
+function targetParent(event, parent) {
+  const parentComment = event.target.closest(parent);
+  return parentComment;
+}
+
+function targetPseudo(parent) {
+  return parent.querySelector(".comment__user-name").textContent; // Get the pseudo of the user who commented
+}
+
+function createFormContainer(parents) {
   // Check if reply form already exists
-  if (parents.querySelector("reply-container")) return;
+  // if (parents.querySelector("reply-container")) return;
+  if (
+    parents.nextElementSibling &&
+    parents.nextElementSibling.classList.contains("reply-container")
+  )
+    return;
 
-  const replyForm = document.createElement("div");
-  replyForm.classList.add("reply-container");
+  const replyContainer = document.createElement("div");
 
-  replyForm.innerHTML = `
+  const pseudo = targetPseudo(parents);
 
-    <textarea class="reply__form" placeholder="Add a comment..."></textarea>
+  replyContainer.classList.add("reply-container");
+
+  replyContainer.innerHTML = `
+
+    <textarea class="reply__form" placeholder="Add a comment...">@${pseudo
+      .toLowerCase()
+      .split(" ")
+      .join("")} </textarea>
 
     <img src="./images/avatars/image-amyrobson.png" class="comment__avatar reply__avatar" alt="avatar"></img>
 
     <button type="submit" class="reply__submit-btn">REPLY</button>
-
 `;
 
   // Append the reply form to the bottom of the comment container
-  // parents.appendChild(replyForm);
-  parents.insertAdjacentElement("afterend", replyForm);
+  parents.insertAdjacentElement("afterend", replyContainer);
+  // parents.insertAdjacentElement("afterend", replyContainer);
+
+  // Button event listener
+  const replyButton = replyContainer.querySelector(".reply__submit-btn");
+
+  replyButton.addEventListener("click", (event) => {
+    const textarea = replyContainer.querySelector(".reply__form");
+    const replyText = textarea.value;
+
+    // Perform the desired action with the captured data
+    console.log("Reply Text:", replyText);
+  });
 }
 
 function createReply(parents) {
@@ -45,9 +75,9 @@ function createReply(parents) {
 // --- EVENT LISTENERS ---
 commentReplies.forEach((reply) => {
   reply.addEventListener("click", (event) => {
-    const parentComment = event.target.closest(".comment-container");
+    const parentComment = targetParent(event, ".comment-container");
 
-    createForm(parentComment);
+    createFormContainer(parentComment);
   });
 });
 

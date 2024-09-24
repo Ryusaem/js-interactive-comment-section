@@ -244,6 +244,7 @@ time {
     grid-row: 1 / -1;
 
     min-width: 77%;
+    max-width: 77%;
   }
 
   .reply__submit-btn {
