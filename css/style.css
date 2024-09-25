@@ -16,11 +16,14 @@
   --color-dark-blue: hsl(212, 24%, 26%);
   --color-white: hsl(0, 0%, 100%);
 
+  /* General  */
   --padding: 20px;
   --gap: 20px;
   --border-radius: 12px;
   --margin: 20px;
 }
+
+/* --- GENERAL STYLE --- */
 
 body {
   padding: 35px 10px;
@@ -38,10 +41,9 @@ time {
   color: var(--color-base-text);
 }
 
-.comment__user-name {
-  font-weight: 600;
-  text-transform: lowercase;
-}
+/* -------------------------- */
+
+/* --- COMMENT CONTAINER --- */
 
 .comment-container {
   display: grid;
@@ -67,6 +69,11 @@ time {
   width: 40px;
 
   grid-column: 1 / 2;
+}
+
+.comment__user-name {
+  font-weight: 600;
+  text-transform: lowercase;
 }
 
 .comment__text {
@@ -120,6 +127,10 @@ time {
   cursor: pointer;
   color: var(--color-light-grayish-blue);
 }
+
+/* -------------------------- */
+
+/* --- REPLY CONTAINER --- */
 
 .reply-container {
   display: grid;
@@ -190,10 +201,16 @@ time {
 /* MEDIA QUERY */
 
 @media (min-width: 768px) {
+  /* --- GENERAL STYLE --- */
+
   body {
     padding: 50px 250px;
     place-items: center;
   }
+
+  /* -------------------------- */
+
+  /* --- COMMENT CONTAINER --- */
 
   .comment-container {
     grid-template: repeat(3, auto) / 0.1fr 0.1fr 0.5fr 0.5fr auto;
@@ -231,7 +248,9 @@ time {
     margin-bottom: 0;
   }
 
-  /* REPLY CONTAINER  */
+  /* -------------------------- */
+
+  /* --- REPLY CONTAINER --- */
   .reply-container {
     grid-template: auto auto / 0.1fr 1fr 1fr 0.1fr;
     gap: 10px;
@@ -258,4 +277,6 @@ time {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
+
+  /* -------------------------- */
 }
