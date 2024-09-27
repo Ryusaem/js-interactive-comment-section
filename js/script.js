@@ -87,13 +87,3 @@ commentReplies.forEach((reply) => {
 });
 
 // ----------------------------------------------
-
-async function fetchData() {
-  try {
-    const response = await fetch("URL");
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error("Fetch error:", error);
-  }
-}
